@@ -1,0 +1,91 @@
+.input {
+	width: 97%;
+	padding: 4px;
+	margin: 10px;
+}
+
+.select {
+	width: 95%;
+	padding: : 4px;
+	margin: 10px 10px;
+}
+
+.cart {
+	border-style: solid;
+
+}
+
+#wrapper {
+  display: flex;
+}
+#left {
+  flex: 0 0 50%;
+
+}
+#right {
+  flex: 1;
+}
+
+.products {
+	margin: 0px 50px 50px 100px;
+}
+
+/*center image */
+figure img {
+	display: block; /*for the img inside your div */
+margin-left: auto ;
+margin-right: auto ;
+}
+
+/**/
+.colorPicker {
+	width: 100%;
+}
+/*t2 CSS exercise */
+h1,h2 {
+	color:red;
+	text-transform: uppercase;
+}
+
+figcaption {
+	color:darkblue;
+}
+
+section {
+	font-family: roboto;
+	margin-left: 5%;
+}
+a {
+	text-transform: uppercase;
+	text-decoration:none;
+}
+ul {
+	list-style-type: none;
+}
+
+body {
+	background-image: url('../img/circles-dark.png')
+}
+
+th {
+	text-transform: capitalize ;
+}
+
+table {
+
+	max-width: 95%;
+	border-style: inset;
+	border-width: 3px;
+
+}
+table tr {
+	border-bottom: 1px solid lightgrey;
+}
+table tr th {
+	background-color: lightblue;
+}
+
+.float-item {
+	border-style: solid;
+	border-width: 3px;
+}

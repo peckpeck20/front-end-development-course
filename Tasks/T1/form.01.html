@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Responsive-Form</title>
+  <meta name="author" content="Jose Zapata">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h1 class="bluee">Form </h1>
+		<form>
+		  <div class="form-group">
+		    <label for="firstName">First Name</label>
+		    <input type="text" class="form-control" id="firstName"  placeholder="Enter First Name">
+		  </div>
+		  <div class="form-group">
+		    <label for="lastName">Last Name</label>
+		    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+		  </div>
+		  <div class="form-group">
+		  	<label class="form-check-label" for="dob">Date of Birth</label>
+		    <input type="date" class="form-control" id="dob">
+		  </div>
+			<div class="form-group">
+			    <label for="gender">Gender</label>
+			    <select class="form-control" id="gender">
+			      <option>Male</option>
+			      <option>Female</option>
+			    </select>
+			  </div>
+		  <div class="form-group">
+		    <label for="exampleFormControlInput1">Email address</label>
+		    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		  </div>
+		    <div class="form-group">
+		    <label for="homePage">Homepage</label>
+		    <input type="text" class="form-control" id="homePage"  placeholder="wwww">
+		  </div>
+		  <div class="form-group">
+			    <label for="favcolor">Favorite Color</label>
+				<br>
+			    <input type="color" id="favcolor" value="#ff0000"  class="colorPicker">	
+			  </div>
+		  <button type="submit" class="btn btn-primary">save</button>
+		</form>
+	</div>
+
+</body>
+  <!--<script src="js/scripts.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+</html>
