@@ -1,0 +1,17 @@
+img {
+    width: 19%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,18 @@
+th {
+	text-transform: capitalize ;
+}
+
+table {
+
+	table-layout: fixed;
+    width: 50%;
+	border-style: inset;
+	border-width: 3px;
+
+}
+table tr {
+	border-bottom: 1px solid lightgrey;
+}
+table tr th {
+	background-color: lightblue;
+}

@@ -1,0 +1,6 @@
+img {
+	height: 200px;
+	/*set images horizontally  */
+	float:left;
+	margin: 0px 0px 15px 15px;
+}
