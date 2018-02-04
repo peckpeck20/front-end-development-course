@@ -12,31 +12,37 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-dark fixed-top bg-dark navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </div>
+        <a class="navbar-brand" href="#">Jose Zapata</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#c1">My Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#c2">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#c3">Other</a>
+            </li>
+          </ul>
         </div>
       </nav>
+
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm" id="c1">
             <h1>My Projects</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in risus ornare tortor tincidunt efficitur. Nam porttitor lorem sed nibh rutrum elementum. Mauris accumsan molestie purus sed ullamcorper. Nunc convallis orci massa, sed euismod magna tincidunt sit amet. Suspendisse et pharetra nisl. Aliquam erat volutpat. Phasellus arcu lectus, convallis sed rutrum sed, sagittis in dui. Fusce convallis aliquet massa ac semper. Ut et urna nec diam pellentesque commodo. Curabitur ac risus ac nulla faucibus varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla eget mauris eget ligula porta suscipit. Aliquam varius tellus sit amet convallis venenatis.</p>
           </div>
-          <div class="col-sm">
+          <div class="col-sm" id="c2">
             <h1>About Me</h1>
             <p>Aliquam facilisis felis vitae ante aliquam, at ultrices libero convallis. Nam et nulla non dui porta congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et vestibulum magna. Donec posuere ipsum vitae ipsum pretium, quis fringilla justo semper. Phasellus vitae sapien quis enim gravida lobortis in ut magna. Vestibulum ac iaculis lorem, accumsan volutpat quam. Etiam tincidunt, velit a lacinia dignissim, arcu elit mollis lectus, blandit malesuada est metus a massa. Fusce non ullamcorper arcu, a interdum erat. Phasellus tempus lacinia mauris et vulputate. Vivamus facilisis sit amet tellus quis pretium. Nulla et ante ornare, sodales est ac, tincidunt massa.</p>
           </div>
-          <div class="col-sm">
+          <div class="col-sm" id="c3">
             <h1>Other Hobbies</h1>
             <p>Morbi lobortis elit ut libero rhoncus, vel vulputate nibh tempor. Donec viverra nunc ligula. Morbi tincidunt facilisis est ut dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dui magna, sodales quis eleifend eu, consectetur a enim. Cras eget quam vel sapien blandit pulvinar sit amet et nibh. Nam risus sapien, dapibus in elit nec, pulvinar lobortis nunc. Phasellus in urna id neque viverra feugiat ac vel tortor. Curabitur maximus nibh ac ultricies aliquam. Pellentesque non dapibus urna. Aliquam pretium eu ex eu tristique. Quisque rutrum nulla ac hendrerit porttitor. Nullam facilisis dolor et leo molestie, non convallis libero ornare.</p>
           </div>
