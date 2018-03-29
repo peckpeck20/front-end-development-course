@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
+    //show all P elements
+    $("#showBt").click(function(){
+        $("p").show();
+    });
+
     //1.1) select all P elements
+        // $("p")
     $("#allP").click(function(){
         $("p").hide();
     });

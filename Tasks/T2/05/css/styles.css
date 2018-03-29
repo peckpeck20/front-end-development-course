@@ -7,11 +7,12 @@ img {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 600px) {
     .flex-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
