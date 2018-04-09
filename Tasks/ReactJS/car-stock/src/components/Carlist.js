@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import { ToastContainer, toast } from 'react-toastify';
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 
 export default class Carlist extends Component {
   constructor(props) {
@@ -23,13 +25,28 @@ export default class Carlist extends Component {
   };
 
   deleteCar = value => {
-    fetch(value, { method: "DELETE" })
-    .then(res => {
-        this.fetchCars()
-        toast.success("Car Deleted", {
-            position: toast.POSITION.TOP_CENTER
-          });
-    });
+    confirmAlert({
+      title: 'Confirm to submit',
+      message: 'Are you sure to do this.',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () => {
+            fetch(value, { method: "DELETE" })
+            .then(res => {
+                this.fetchCars()
+                toast.success("Car Deleted", {
+                    position: toast.POSITION.TOP_CENTER
+                  });
+            });
+          }
+        },
+        {
+          label: 'No',
+          // onClick: () => alert('Click No')
+        }
+      ]
+    })
   };
 
   componentDidMount() {
