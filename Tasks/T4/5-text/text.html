@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using jquery</title>  
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+        <p id="p1"><b>chapter 1.</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis auctor aliquam. Phasellus id libero vitae augue scelerisque rutrum. Maecenas posuere libero ut arcu ultrices, eget laoreet ante interdum. Pellentesque eget lacinia augue, id congue ex. Mauris interdum libero id luctus dapibus. Quisque ac enim et ipsum facilisis accumsan. Fusce luctus tincidunt erat, non commodo tellus ultrices quis. Maecenas felis ante, euismod ut diam et, dignissim condimentum libero.</p>
+        <br/>
+        <p id="p2"><b>chapter 2.</b>Fusce ac neque erat. Morbi dictum pretium justo, et lobortis purus pretium in. Nunc ornare nisi ut libero eleifend, sit amet cursus ligula consectetur. In at tempus lorem, at dapibus eros. Duis sollicitudin finibus magna, sed mollis erat porta lobortis. Vestibulum et orci quis libero mattis vulputate ac non ipsum. Aenean imperdiet, felis non porta porta, tellus dolor laoreet libero, sit amet euismod ex ligula eleifend elit. Nam facilisis quis elit nec luctus. Morbi feugiat interdum nisi, quis lobortis tellus rutrum eget. Pellentesque porttitor dolor non quam sollicitudin, id molestie felis scelerisque. Phasellus viverra est leo, interdum tincidunt metus sodales sit amet.</p>
+        <button  id="toogleBt" type="button" class="btn btn-success">Toggle</button>
+        <button  id="fadeBt" type="button" class="btn btn-light">fade</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+    // Insert your code here
+
+    $("#toogleBt").click(function(){
+        $("#p1").toggle();
+    });
+
+    $("#fadeBt").click(function(){
+    $("p").fadeOut();
+    });
+
+    
+  });
+</script>
+</body>
+</html>

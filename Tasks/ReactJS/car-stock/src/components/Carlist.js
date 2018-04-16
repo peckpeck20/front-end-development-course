@@ -72,7 +72,7 @@ export default class Carlist extends Component {
     fetch(link, { 
       method: 'PUT',
       headers : {'Content-Type' : 'application/json'},
-     body : JSON.stringify(editCar) 
+      body : JSON.stringify(editCar) 
     })
     .then(res => {
         this.fetchCars()
